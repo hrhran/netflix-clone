@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    height: 120px;
+    width: 250px;
+    transition: .3s ease;
+    flex-direction: column;
+    .info{
+        display: none;
+    }
+}
+
+.card:hover{
+    height: 147px;
+    width: 306px;
+}

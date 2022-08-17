@@ -1,0 +1,77 @@
+
+.home{
+    background-color: #141414;
+    width: 100vw;
+    max-width:100%;
+    
+    .cover{
+        height: 800px;
+        position: relative;
+        .cover-banner{
+            object-fit: cover;
+            height: 800px;
+            width: 100%;
+            mask-image:  linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 80%);
+            position: absolute;
+        }
+        .image{
+            display: none;
+            transition: 1s ease-in;
+        }
+        .video{
+            transition: 1s ease-out;
+        }
+        .cover-items{
+            position:absolute;
+            top:55%;
+            left:55%;
+            width: 100%;
+            padding-left: 5%;
+            transform: translate(-55%,-55%);
+            .cover-logo{
+                width: 30%;
+            }
+            .cover-info{
+                color: white;
+                font-size: 1.1rem;
+                width: 30%;
+            }
+            .cover-btn{
+                display: flex;
+                margin: 20px 0;
+                gap: 15px;
+                .play-btn, .info-btn{
+                    font-size: 1.2em;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 15px 50px;
+                    font-weight: 600;
+                }
+                .play-btn{
+                    background-color: white;
+                }
+                .info-btn{
+                    background-color: rgba(255, 255, 255, 0.2);
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+
+    .home-title{
+        color: white;
+        font-weight: 600;
+        font-size: 1.1em;
+        margin: -50px 10px;
+    }
+    .titles{
+        margin: 60px 10px;
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+    }
+
+}

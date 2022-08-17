@@ -1,0 +1,51 @@
+
+.black{
+    background: $background-color-black !important;
+}
+
+.navbar{
+    position: fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.795),rgba(16, 16, 16, 0.029));
+    width: 100%;
+    height: 56px;
+    overflow: hidden;
+    z-index: 50;
+    transition: .5s ease;
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+        .nav-left{
+            display: flex;
+            width: 45%;
+            align-items: center;
+            gap: 20px;
+            .nav-logo{
+                padding: 10px;
+                width: 18%;
+                fill: $color-netflix-red
+            }
+            .nav-left-menu ul{
+                color:white;
+                display: flex;
+                gap:15px;
+                font-size: 0.7em;
+            }
+        }
+        .nav-right ul{
+            padding: 10px;
+            font-size: 0.7em;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            color:white;
+            fill:white;
+        }
+        .profile-icon{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+}
